@@ -327,3 +327,17 @@ and (max-device-width : 1024px){
       -webkit-transition: none; /* sets to default setting */
       transition: none;        /* sets to default setting */
      }
+     .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: none;
+        transform-style: preserve-3d;
+      }
+      
+      .flipcard:hover .flip-card-inner,
+      .flipcard:focus-within .flip-card-inner{
+        transform: none;
+      }
+    }
