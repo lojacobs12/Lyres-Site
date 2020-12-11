@@ -71,7 +71,7 @@ header{
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
-  background-size: 150%;      /* Parallax effect */
+  background-size: 100%;      /* Parallax effect */
   max-height: 812px;
   grid-column: 1 / -1;
   grid-row: 1 / span 1; 
