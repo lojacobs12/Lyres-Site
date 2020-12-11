@@ -89,6 +89,7 @@ header>h1{
     animation-name: music1;
     animation-duration: 10s;
 }
+
 #music3{
     display:none;
 }
@@ -188,6 +189,7 @@ footer{
     width: 100%;
 }
 
+
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px){
@@ -275,6 +277,7 @@ and (max-device-width : 1024px){
         display: none;
     }
     #music3{
+        display:block;
         height: auto;
         background-color: navy;
         animation-name: music3;
@@ -284,6 +287,7 @@ and (max-device-width : 1024px){
         z-index: -1;
     }
     #music4{
+        display:block;
         height: auto;
         background-color: navy;
         animation-name: music3;
