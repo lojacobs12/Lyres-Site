@@ -1,0 +1,155 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #88CAF0;
+}
+
+a:-webkit-any-link {
+    color: navy;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-shadow: 2px 2px 5px navy;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    }
+    
+    .skip a:focus{
+    top: 0px;
+    }
+    
+    *:focus{
+      border-style: solid;
+      border-width: 2px;
+    }
+
+nav>ul{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;   
+    position: fixed;
+    width: 100%;
+    font-size: 18px;
+}
+
+nav>ul>li:nth-child(2){
+    font-size: 130%;
+    font-weight: bold;
+    }
+
+li{
+    background-color: white;
+    color: navy;
+    padding: 5px 10px 5px 10px;
+}
+
+header{
+    padding: 50px 0px 0px 0px;
+    margin: auto;
+}
+
+
+h1{ 
+    color: white;
+    font-size: 50px; 
+    font-weight: bold;
+    text-shadow: 2px 1px navy;
+    text-align: center;
+    padding: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: navy;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+}
+
+div>img{
+    padding: 10px;
+    max-height: 350px;
+    filter: drop-shadow(2px 2px 10px white);
+}
+
+h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 1px 10px navy;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px grey;
+}
+
+footer p{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 100%;
+    text-shadow: none;
+}
+footer{
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+
+    nav>ul{
+        text-align: left;
+        text-align:left;
+        justify-content: left;
+        width: auto;
+        font-size: 22px;
+        }
+    
+    h1{
+        font-size: 80px;
+    }
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  nav>ul{
+    text-align: left;
+    text-align:left;
+    justify-content: left;
+    width: auto;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+    
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }

@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #88CAF0;
+}
+
+a:-webkit-any-link {
+    color: navy;
+    text-decoration: none;
+  }
+
+nav a:hover{
+    text-shadow: 2px 2px 5px navy;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    }
+    
+    .skip a:focus{
+    top: 0px;
+    }
+    
+    *:focus{
+      border-style: solid;
+      border-width: 2px;
+    }
+
+nav>ul{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    font-size: 18px;
+}
+
+nav>ul>li:nth-child(5){
+    font-size: 130%;
+    font-weight: bold;
+    }
+
+li{
+    background-color: white;
+    color: navy;
+    padding: 5px 10px 5px 10px;
+}
+
+header{
+    padding: 40px 0px 0px 0px;
+    margin: auto;}
+
+h1{ 
+    color: white;
+    font-size: 60px; 
+    font-weight: bold;
+    text-shadow: 2px 1px navy;
+    text-align: center;
+    padding: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: navy;
+}
+
+.contact_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+}
+div.contact_info>div>a{
+    font-family: 'Dancing Script', cursive;
+    color: navy;
+    font-size: 30px;
+}
+p{
+    font-size: 16px;
+}
+
+div.contact_info>div{
+    color: navy;
+    padding: 50px 0px;
+    text-align: center;
+    margin: 10px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height:150px;
+    background-repeat: no-repeat;
+}
+
+div.email>h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+  
+}
+div.email{
+    background-image: url('../imgs/Mail.png');
+}
+
+div.insta{
+    display: block;
+    background-image: url('../imgs/Instagram.png');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height:150px;
+    background-repeat: no-repeat;
+
+}
+div.facebook{
+    display: block;
+    background-image: url('../imgs/Facebook.png');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height:150px;
+    background-repeat: no-repeat;
+
+}
+
+div.MP{
+    display: block;
+    background-image: url('../imgs/Maize.png');
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height:150px;
+    background-repeat: no-repeat;
+}
+
+h2{
+    color: navy;
+    font-size: 20px;
+    text-shadow: 3px 3px 4px white;
+    padding-bottom: 5px;
+}
+
+div.exec>h2{
+    text-align: center;
+    font-weight: bold;
+    color:navy;
+    padding: 15px;
+    font-size: 30px;
+    text-shadow: 3px 3px 4px white;
+}
+div.contain{
+    display:grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+div.contain>div>img{
+    border-radius:50%;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+}
+
+footer p{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 100%;
+    text-shadow: none;
+}
+footer{
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+
+    nav>ul{
+        text-align: left;
+        text-align:left;
+        justify-content: left;
+        width: auto;
+        font-size: 22px;
+        }
+    
+    h1{
+        font-size: 80px;
+        padding-top: 25px;
+    }
+
+    p{
+        font-size:20px;
+    }
+    div.contact_info>div{
+        padding: 60px 0px;
+        width: 170px;
+        height:170px;
+    }
+
+    .contact_info{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+
+    div.contain{
+        display:grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        grid-column-gap: 30px;
+    }
+
+    div.exec>h2{
+        padding-top: 50px;
+    }
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  nav>ul{
+    text-align: left;
+    text-align:left;
+    justify-content: left;
+    width: auto;
+    }
+    div.contain{
+        display:grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        grid-column-gap: 30px;
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+    
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
