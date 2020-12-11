@@ -179,14 +179,10 @@ footer p{
     text-align: center;
     font-size: 100%;
     text-shadow: none;
-    position:absolute;
-    bottom:0;
 }
 footer{
     padding-top: 30px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
 
 @media only screen 
