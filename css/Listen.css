@@ -350,7 +350,16 @@ and (max-device-width : 1024px){
       transition: none;        /* sets to default setting */
      }
     
-    #music1 #music2 #music3 #music4{
+    #music1{
+        animation:none;
+    }
+    #music2{
+        animation:none;
+    }
+    #music3{
+        animation:none;
+    }
+    #music4{
         animation:none;
     }
 }
