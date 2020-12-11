@@ -89,6 +89,12 @@ header>h1{
     animation-name: music1;
     animation-duration: 10s;
 }
+#music3{
+    display:none;
+}
+#music4{
+    display:none;
+}
 
   @keyframes music1 {
     0% {background-color: navy;}
